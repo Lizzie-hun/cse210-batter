@@ -1,7 +1,8 @@
 from time import sleep
 
-import raylibpy
+import pyray
 from game import constants
+from game.brick import Brick
 
 class Director:
     """A code template for a person who directs the game. The responsibility of 
@@ -25,6 +26,7 @@ class Director:
         self._cast = cast
         self._script = script
         self._keep_playing = True
+        self.brick = Brick()
         
     def start_game(self):
         """Starts the game loop to control the sequence of play."""
@@ -38,8 +40,11 @@ class Director:
             #     # Game over
             #     self._keep_playing = False
 
-            if raylibpy.window_should_close():
+            if pyray.window_should_close():
                 self._keep_playing = False
+            
+            
+            
 
 
     def _cue_action(self, tag):

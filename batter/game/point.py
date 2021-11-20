@@ -82,7 +82,7 @@ class Point:
         """
         return Point(self._x * factor, self._y * factor)
 
-    def reverse(self):
+    def reverse(self, velocity):
         """Gets a new Point that is the reverse of this one.
         
         Args:
@@ -91,7 +91,7 @@ class Point:
         Returns:
             Point: A new Point that is reversed.
         """
-        return self.scale(-1)
+        return velocity * (-1)
 
     def is_zero(self):
         """
