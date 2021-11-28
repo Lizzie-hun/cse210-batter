@@ -1,7 +1,7 @@
 import os
 
-MAX_X = 1200
-MAX_Y = 900
+MAX_X = 800
+MAX_Y = 600
 FRAME_RATE = 30
 
 DEFAULT_SQUARE_SIZE = 20
