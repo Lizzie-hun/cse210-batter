@@ -56,6 +56,3 @@ class ControlActorsAction(Action):
 
         paddle.set_velocity(direction.scale(constants.PADDLE_SPEED))
 
-    def remove_actor(self,cast):
-        cast = cast["brick"]
-        #brick.pop

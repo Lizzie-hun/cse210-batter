@@ -76,6 +76,7 @@ class MoveActorsAction(Action):
             audio_service.play_sound(constants.SOUND_OVER)
             velocity = Point(0,0)
             sleep(5)
+
             pyray.close_window()
 
         actor.set_velocity(velocity)
